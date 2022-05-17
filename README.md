@@ -23,7 +23,7 @@ windows: https://git-scm.com/download/win
 ## Criar conta no GitHub
 
 ## Clonar o projeto
-git clone https://github.com/beccacoutinho/curso-frontend.git
+git clone https://github.com/beccacoutinho/EBAC_curso.git
 
 ## Commits
 Informação de alteração
