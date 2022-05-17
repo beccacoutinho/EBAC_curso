@@ -1,0 +1,29 @@
+.intro{
+    background-color: white;
+    /*display: grid;
+    grid-template-columns: repeat(2, 1fr);*/
+}
+.intro img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 4px;
+    background: linear-gradient(to right, #b787da,#be47e6 );
+    float: left;
+}
+.intro h2{
+    color: #8a4bb8;
+}
+.about h3{
+    text-align: center;
+    font-weight:600;
+    color: #a66cd0;
+}
+.about{
+    clear: both;
+    padding-top: 50px;
+}
+.about p{
+    padding-right: 20px;
+}

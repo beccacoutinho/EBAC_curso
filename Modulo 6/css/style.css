@@ -1,0 +1,175 @@
+/*Conteudo geral*/
+
+body{
+    font-family: 'KoHo', sans-serif;
+    letter-spacing: 0.2px;
+    background-color: rgb(243, 239, 239);
+    color:rgb(94, 94, 94);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+/*VAMOS DE CONTEUDO NO MEIO PARTE DO TOPO*/
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    max-width: 980px;
+    background-color: white;
+}
+
+.main-top{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 0.8em;
+    border:1px solid #edc9cb;
+}
+.main-status ul{
+    transform: translateY(20%);
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    grid-gap:8px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.main-status li{
+    letter-spacing:.05em;
+    width: 60%;
+    word-wrap: break-word;
+    color: rgb(94, 94, 94);
+    margin-bottom: 20px;
+}
+.main-status i{
+    font-size: 1.2em;
+    color:#ce7579;
+    background-color: white;
+    padding: 5px;
+    border-radius: 100%;
+    border: 1px solid #ce7579;
+    margin: 5px;
+    margin-right: 5px;
+    
+}
+
+.main-img{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.main-img img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border:1px solid #edc9cb;
+}
+
+/*E AGORA VEM O CONTEUDO DO MEIO*/
+
+.main-middle{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border:1px solid #edc9cb;
+}
+#abt-text{
+    padding-left: 1em;
+    padding-top:0.5em;
+    text-align: center;
+}
+
+#abt-text b{
+    color:#bb6469;
+}
+
+.info-short{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.info-short i{
+    padding-right: 5px;
+    color:#bb6469;
+}
+
+/*E EMBAIXO PARTE 1*/
+
+.main-bottom{
+    width: 100%;
+    border:1px solid #edc9cb;
+    
+}
+
+#blogs{
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: right;
+    
+}
+.blog-content{ 
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.blog-content img{
+    width:55px;
+    height:55px;
+    object-fit: cover;
+    border-radius: 100%;
+    transform: translateX(50%);
+}
+.blog-info a{
+    color: #bb6469;
+}
+.blog-info a:hover{
+    color:#edc9cb;
+    transition: 0.5s ease;
+}
+.blog-info p{
+    transform: translateY(-13px);
+}
+
+/*E EMBAIXO PARTE 1*/
+
+.socials{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.2em;
+}
+.socials a{
+    margin-right:40px;
+}
+.socials i{
+    font-size: 1em;
+    color: white;
+    background-color: #edc9cb;;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 5px;
+    }
+
+.socials i:hover{
+    color: #ce7579;
+    background-color: white;
+    border: 1px solid #ce7579;
+    transition: 0.5s ease;
+}
+
+  /* Responsive layout  */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }

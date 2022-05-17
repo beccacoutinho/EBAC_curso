@@ -1,0 +1,238 @@
+/*NORMAL*/
+html{
+    font-family: sans-serif;
+}
+h1, h2, h3 {
+    color: white;
+	font-weight: 400;
+	font-family: 'Limelight', cursive;
+}
+
+/*header*/
+header{
+    width: 80vw;
+    margin: auto;
+    background-color: rgb(139, 67, 141);
+    text-align: center;
+    padding: 1.3vw 0;
+    font-size: 1.3em;
+}
+header div{
+    background-color:  rgb(89, 49, 116);
+    margin: auto;
+    width: 50vw;
+}
+
+/*nav*/
+
+nav{
+    margin-top: 3vw;
+    margin-left: 3vw;
+    padding-top: 1vw;
+    width: 15vw;
+    background-color: rgb(75, 26, 77);
+    float: left;
+}
+nav h3{
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    padding-left: 1em;
+    background-color: rgb(139, 67, 141);
+}
+
+nav li{
+    
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 0.3em;
+    
+}
+nav a:hover{
+    color: rgb(194, 99, 197);
+}
+nav ul{
+    align-items: center;
+    padding: 3vw 0;
+}
+nav a{
+    text-decoration: none;
+    color: white
+}
+
+/*meio1*/
+
+.imagens{
+    margin-top: 3vw;
+    margin-left: 3vw;
+    padding-left: 16vw;
+    width: 70vw;
+    
+}
+article h1{
+    color:  rgb(75, 26, 77);
+    padding-left: 8vw ;
+    padding-top: 3vw;
+    font-size: 1.6em;
+}
+
+.coluna {
+    display: block;
+    width: 25%;
+    float: left;
+    padding: 5px;
+    padding-top: 4vw;
+    padding-left: 3vw;
+  }
+
+  #grafico-01 {
+    width: 12vw;
+    height: 12vw;
+    overflow: hidden;
+    border-radius: 50%;
+    filter: drop-shadow(4px 4px 10px #333);
+}
+
+#grafico-01 img {
+    width: 100%;
+    height: auto;
+}
+.filtro1, .filtro3{
+    filter: grayscale(75%) blur(0.5px);
+}
+.filtro1:hover{
+    filter: grayscale(0%) blur(0px);
+}
+.filtro2:hover{
+    filter: grayscale(75%) blur(0.5px);
+}
+.filtro3:hover{
+    filter: grayscale(150%) blur(0px) brightness(50%);
+}
+
+
+/*meio2*/
+
+.textin{
+    clear: both;
+    width: 60vw;
+    padding: 5vw 1vw;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.8em;
+    border: 1px solid black;
+    border: 1px solid black;
+}
+/*meio3*/
+.maps{
+    padding-top: 5vw;
+    margin: auto;
+    width: 75vw;
+    height: 40vh;
+    overflow: hidden;
+    margin-bottom: 5vw;
+}
+/*footer*/
+footer{
+    padding: 2vw 0;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: rgb(139, 67, 141);
+    color: white;
+    bottom: 0;
+}
+
+@media (max-width: 768px){
+    header{
+        width: 100vw;
+        font-size: 1.5em;
+        margin-bottom: 0;
+        }
+        header div{
+            background-color:  rgb(125, 26, 145);
+        }
+        nav{
+            width: 100vw;
+            font-size: 1.1em;
+            margin: 0;
+            padding-top: 5vw;
+            text-align: center;
+            margin-top: -4vw;
+        }
+        nav li{
+            display: inline;
+            font-size: 0.8em;
+        }
+        nav ul{
+            padding: 3vw 0;
+        }
+    
+        .imagens{
+            width: 90vw;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        article h1{
+            padding-top: 200px;
+            padding-left: 6vw;
+            font-size: 1.6em;
+        }
+    
+        .coluna{
+            padding-top: 10vw;
+            margin-left: 3vw;
+            padding-right: 1.5vw;
+        }
+        #grafico-01 {
+            width: 20vw;
+            height: 20vw;
+        }
+    
+        .textin{
+            width: 90vw;
+            font-size: 1.2em;
+            border: none;
+        }
+        .maps{
+            width: 80vw;
+            height: 35vh;
+        }
+        footer{
+            padding: 5vw 0;
+            font-size: 0.95em;
+        }
+}
+
+@media (max-width: 425px){
+    header{
+    font-size: 1em;
+    }
+    header div{
+        background-color:  rgb(145, 26, 62);
+    }
+    nav{
+        font-size: 0.8em;
+    }
+    nav li{
+        font-size: 0.95em;
+    }
+    article h1{
+        padding-top: 120px;
+        padding-left: 6vw;
+        font-size: 1.2em;
+    }
+
+    .coluna{
+        padding-top: 10vw;
+        margin-left: 3vw;
+        padding-right: 1.5vw;
+    }
+
+    .textin{
+        width: 90vw;
+        font-size: 0.85em;
+    }
+    footer{
+        padding: 2vw 0;
+        font-size: 0.5em;
+    }
+}

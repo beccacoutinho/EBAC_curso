@@ -1,0 +1,81 @@
+/*GERAL*/
+body{
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/*HEADER*/
+
+.geral{
+    background-color: white;
+    width: 10vw;
+    height: 45vh;
+    margin-left: 2vw;
+    margin-top: 10vh;
+    position: fixed;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow:1px 1px 5px 1px #b787da;
+}
+
+.geral a{
+    color: #b787da;
+    font-size: 1.2em;
+}
+
+
+
+/*NAV*/
+
+.top-nav{
+    text-align: center;
+    top: 0;
+    width: 100vw;
+    height: 6vh;
+    background: linear-gradient(to right, #b787da,#8b2caa );
+}
+
+.top-nav i{
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 8px;
+    color: white;
+    text-shadow: 2px 0 13px white;
+}
+.top-nav i:hover{
+    transition: 0.5s ease;
+    color: #4b0e5f;
+    text-shadow: 2px 0 13px #4b0e5f;
+}
+
+
+
+/*SECTION*/
+.container{
+    background-color: white;
+    width: 80vw;
+    margin-left: 15vw;
+    margin-top: 4vh;
+    border-radius: 10px;
+    box-shadow:1px 1px 5px 1px #b787da;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    position: fixed; /*talvez mudar esse*/
+    bottom: 0;
+    width: 100vw;
+    height: 6vh;
+    background: linear-gradient(to right, #b787da,#8b2caa );
+    color: white;
+    text-shadow: 2px 0 13px white;
+}
