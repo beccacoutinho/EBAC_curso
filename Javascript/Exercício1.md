@@ -10,7 +10,6 @@ a cabra sozinha com o maço de alfafa. Escreva um algoritmo
 para fazer a travessia dos pertences que estão em uma
 margem do rio para a outra.
 
-
 R:
 homem pega cabra
 homem atravessa com a cabra
