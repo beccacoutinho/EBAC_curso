@@ -1,0 +1,52 @@
+
+section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 32%;
+    float: left;
+    margin: 5px;
+}
+.nav-link{
+    color: #503e2c;
+}
+.nav-link:hover{
+    color: #ee976b;
+}
+header{
+    background-color: #f3d6b4b0;;
+    border-bottom: 1px solid #775c41c4;
+}
+header h1{
+    color: #523314;
+}
+#sobre .btn, #contato .btn{
+    background-color: #775c41a2;
+    border: #63472cfa;
+}
+
+.card .btn{
+    background-color: #f3d6b4;
+    border:#ad7650;
+    color:#805639;
+}
+.card .btn:hover{
+    background-color: #805639;
+    border:#ad7650;
+    color:#f3d6b4;
+}
+h2{
+    border-bottom: 1px solid #503e2c;
+}
+
+#carouselId{
+    width: 80vw;
+    margin: auto;
+}

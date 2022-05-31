@@ -1,0 +1,19 @@
+textarea.form-control {
+    width: 100% !important;
+}
+.btn{
+    background-color: #f3d6b4;
+    border:#ad7650;
+    color:#805639;
+}
+.btn:hover{
+    background-color: #805639;
+    border:#ad7650;
+    color:#f3d6b4;
+}
+.umlink{
+    color: #805639;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
