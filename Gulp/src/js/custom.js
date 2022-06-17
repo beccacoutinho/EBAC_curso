@@ -116,7 +116,6 @@ $(document).ready(function(){
 
    })
 
-
    /*
     * TODO: incrementar a validação
     * - checar se o nome é válido (mais de 2 caracteres)
@@ -124,16 +123,43 @@ $(document).ready(function(){
     * - checar se o cpf é válido com regex
     */
    function validate( elem ){
-      if( elem.val() == '') {
+      campoAValidar=  elem.attr('name')
+      
+      const emailValido = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
+      const cpfValido = /^[0-9]{11}$/;
+      const cpfLimpo = elem.val().replace(/[.-]/g, "")
+      
+      
+      console.log(campoAValidar)
+      console.log(elem.val())
 
-         console.log('o campo de '+ elem.attr('name') + ' é obrigatório')
+      if( campoAValidar == 'nome' && elem.val().length <= 2) {
+
+         console.log('o campo de '+ elem.attr('name') + ' esta no formato incorreto')
 
          elem.parent().find('.text-muted').show()
 
          elem.addClass('invalid')
 
-         return false
+      } else if( campoAValidar == 'email' && !elem.val().match(emailValido) ){
+         console.log('o campo de '+ elem.attr('name') + ' esta no formato incorreto')
+
+         elem.parent().find('.text-muted').show()
+
+         elem.addClass('invalid')
+ 
+      } else if(campoAValidar == 'cpf' && !cpfLimpo.match(cpfValido)){
+        
+            console.log('o campo de '+ elem.attr('name') + ' esta no formato incorreto')
+
+            elem.parent().find('.text-muted').show()
+
+            elem.addClass('invalid')
+         
+
+
       } else {
+         
          elem.parent().find('.text-muted').hide()
          elem.removeClass('invalid')
       }
@@ -144,27 +170,43 @@ $(document).ready(function(){
       e.preventDefault()
 
       const inputName = $('#nome')
-      const inputEmail = $('#email')
+      const inputEmail = $('#formemail')
+      const inputCpf = $('#cpf')
+
+      
 
       validate(inputName)
       validate(inputEmail)
+      validate(inputCpf)
 
-      if(inputEmail.hasClass('invalid') || inputName.hasClass('invalid')){
+      if(inputEmail.hasClass('invalid') || inputName.hasClass('invalid')|| inputCpf.hasClass('invalid')){
          console.log('verificar campos obrigatórios')
          return false
       } else {
-         $(this).submit()  
+         return true
       }
 
    })
 
-   $('body').on('blur', '#nome', function(){
+   /**
+    * PARTE 3 - validação manual
+    */
+
+    $('body').on('blur', '#nome', function(){
       validate($(this))
    })
 
-   $('body').on('blur', '#email', function(){
+   $('body').on('blur', '#formemail', function(){
       validate($(this))
    })
+
+   $('body').on('blur', '#cpf', function(){
+      validate($(this))
+   })
+
+   /**
+    * PARTE 4 - validação com plugins (biblioteca de codigos prontos)
+    */
 
 
    $('body').on('focus', '#date', function(){
@@ -197,3 +239,4 @@ $(document).ready(function(){
    })
 
 })
+
