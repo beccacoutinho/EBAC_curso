@@ -1,0 +1,27 @@
+@mixin theme($theme: $color-05, $bg: $bg-color) {
+    background-color: $bg;
+    border: 1px solid $theme;
+    box-shadow: 0 0 1px rgba($color-default, .25);
+}
+
+.cars {
+    
+    h2 {
+        color: $color-05;
+    }
+
+    .destacks {
+        @include theme;
+    }
+    li {
+        @include theme ($theme: $color-06, $bg: $bg-color3);
+        color: $color-04;
+        display: flex;
+        float: left;
+        height: max-content;
+        justify-content: center;
+        align-items: baseline;
+        flex-flow: column;
+
+    }
+}

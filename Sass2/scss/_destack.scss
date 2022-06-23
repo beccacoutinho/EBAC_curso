@@ -1,0 +1,32 @@
+.destack {
+    background-color: $color-04;
+    //padding: $space-default;
+    margin-top: 100vh;
+    width: 80%;
+    margin: auto;
+    border: 1px solid $color-05;
+
+    h1 {
+        color: $color-06;
+        float: left;
+        font-size: $font-big;
+        margin-top: 0;
+    }
+    h2 {
+        float: left;
+        font-size: $font-small;
+        margin-left: $space-default;
+        margin-top: $mt;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin: $space-default auto;
+    }
+    p {
+        font-size: $font-normal;
+        color: $color-06;
+        padding: 2rem 0;
+        width: 100%;
+    }
+}
