@@ -6,24 +6,24 @@
     margin: auto;
     border: 1px solid $color-05;
 
-    h1 {
+    &__title {
         color: $color-06;
         float: left;
         font-size: $font-big;
         margin-top: 0;
     }
-    h2 {
+    &__subtitle {
         float: left;
         font-size: $font-small;
         margin-left: $space-default;
         margin-top: $mt;
     }
-    img {
+    &__image {
         width: 100%;
         height: auto;
         margin: $space-default auto;
     }
-    p {
+    &__description {
         font-size: $font-normal;
         color: $color-06;
         padding: 2rem 0;

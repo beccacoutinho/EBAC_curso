@@ -5,15 +5,12 @@
 }
 
 .cars {
-    
-    h2 {
+    //@at-root %blocks;
+    &__title {
         color: $color-05;
     }
 
-    .destacks {
-        @include theme;
-    }
-    li {
+    &__item {
         @include theme ($theme: $color-06, $bg: $bg-color3);
         color: $color-04;
         display: flex;
@@ -23,5 +20,14 @@
         align-items: baseline;
         flex-flow: column;
 
+        &--destack {
+            @include theme;
+        }
+
     }
+
+    &__button {
+        background-color: $color-default;
+    }
+
 }
