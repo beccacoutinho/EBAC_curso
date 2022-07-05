@@ -1,0 +1,26 @@
+.hero{
+    text-align: center;
+    align-items: center;
+    h1{
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 2px 1px 4px rgba(98, 2, 122, 0.6);
+        font-size: 4rem;
+        }
+   
+}
+.hero1{
+    //text-align: center;
+    height: 500px;
+    width: 800px;
+    margin:auto;
+    margin-top: 25px;
+    img{
+        width: 80%;
+        height: auto;
+        &:hover{
+            box-shadow: 2px 2px 8px 1px rgba(122, 2, 76, 0.6);
+            transition: 1.2s;
+        }
+    }
+    
+}
