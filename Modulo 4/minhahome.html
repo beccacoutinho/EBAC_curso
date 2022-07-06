@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Becca's Home</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/phosphor-icons"></script>
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			  width: 60vw;
+			  margin: auto;
+			  margin-top: 10vh;
+			  
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #e765bc;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			  background: #eee3e7;
+			  padding: 20px;
+			  border-left: 1px solid #e765bc;
+			}
+			nav h3{
+				color: #fb5944;
+			}
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			.trab a{
+				color: #fb5d6d;
+			}
+
+			.titulo-redes{
+				margin-top: 45px;
+			}
+
+			.redes{
+				display: flex;
+				margin-top: 10px;
+			}
+			.redes i{
+				color: #fb5d6d;
+				background-color: white;
+				font-size: 30px;
+				padding: 5px;
+				border: 1px solid #fb5d6d;
+				border-radius: 50%;
+				margin: 5px;
+				margin-bottom: 8px;
+			}
+
+			nav a{
+				text-decoration: none;
+			}
+			
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: white;
+			  border-right: 1px solid #e765bc;
+			}
+			img{
+				border-radius: 50%;
+				border: 1px solid #fb5d6d;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #e765bc;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Aulas</h3>
+				<ul class="trab">
+					<li><a href="01-introducao.html">Introdução</a></li>
+					<li><a href="02-listas-e-links.html">Listas e Links</a></li>
+					<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+					<li><a href="04-tabelas.html">Tabelas</a></li>
+					<li><a href="05-layouts.html">Layouts</a></li>
+					<li><a href="06-formularios.html">Formulários</a></li>
+				</ul>
+
+				<h3 class="titulo-redes">Redes Sociais</h3>
+				<ul class="redes">
+					<li><a href="https://www.linkedin.com/in/rebecca-coutinho-71432215b/"><i class="ph-linkedin-logo"></i></li>
+					<li><a href="https://www.instagram.com/becsctnh/"><i class="ph-instagram-logo"></i></li>
+					<li><a title="discord" href="#"><i class="ph-discord-logo"></i></a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<img width="200" src="./imagens/pw01.jpg" height="200" alt="Icon de anime">
+				
+				<h2>Rebecca Coutinho</h2>
+
+
+				<p>Formada em <strong>biomedicina</strong>, porém buscando novos conhecimentos em novas áreas. Ou seja, apenas uma <em>estudante</em> </p>
+				
+
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Rebecca</p>
+		</footer>
+		
+	</body>
+</html>
