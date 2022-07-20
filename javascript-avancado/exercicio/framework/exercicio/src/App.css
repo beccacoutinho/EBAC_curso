@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  background-color: rgb(243, 239, 239);
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+
+.App-header {
+  border: 2px solid rgb(211, 199, 199);
+  border-radius: 5%;
+  height: 60vh;
+  width: 60vw;
+  display: flex;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  color: #ce7579;
+}
