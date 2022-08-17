@@ -1,0 +1,37 @@
+
+
+#imagens {
+
+    h2{
+        margin-bottom: 2vw;
+    }
+
+    .container {
+       /* display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;*/
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr);
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 4vw;
+
+        
+        
+        img {
+            height: 200px;
+            width: auto;
+            margin: 10px;
+            object-fit: fill;
+            object-position: bottom;
+            border: 1px solid $color01;
+
+            &:hover {
+                opacity: 70%;
+                border-color: $color03;
+            }
+        }
+
+    }
+
+}

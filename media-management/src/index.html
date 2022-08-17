@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Media management with CSS</title>
+</head>
+<body>
+    <div id="root">
+        <header>
+            <h1>Media management with CSS</h1>
+        </header>
+        
+        <section id="vetoriais">
+
+            <h2>SVG Animation</h2>
+
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class="wave-01" fill="#9150cd" fill-opacity="0.75" d="M0,160L0,224L240,224L240,192L480,192L480,32L720,32L720,288L960,288L960,96L1200,96L1200,256L1440,256L1440,320L1200,320L1200,320L960,320L960,320L720,320L720,320L480,320L480,320L240,320L240,320L0,320L0,320Z"></path>
+                <path class="wave-02" fill="#6b08a9" fill-opacity="0.65" d="M0,96L0,288L120,288L120,192L240,192L240,96L360,96L360,160L480,160L480,288L600,288L600,224L720,224L720,160L840,160L840,64L960,64L960,224L1080,224L1080,128L1200,128L1200,160L1320,160L1320,192L1440,192L1440,320L1320,320L1320,320L1200,320L1200,320L1080,320L1080,320L960,320L960,320L840,320L840,320L720,320L720,320L600,320L600,320L480,320L480,320L360,320L360,320L240,320L240,320L120,320L120,320L0,320L0,320Z"></path>
+                <path class="wave-03" fill="#DBBDEE" fill-opacity="1" d="M0,224L0,224L60,224L60,224L120,224L120,64L180,64L180,224L240,224L240,96L300,96L300,160L360,160L360,160L420,160L420,32L480,32L480,160L540,160L540,128L600,128L600,256L660,256L660,288L720,288L720,128L780,128L780,32L840,32L840,192L900,192L900,96L960,96L960,192L1020,192L1020,224L1080,224L1080,288L1140,288L1140,0L1200,0L1200,224L1260,224L1260,192L1320,192L1320,96L1380,96L1380,224L1440,224L1440,320L1380,320L1380,320L1320,320L1320,320L1260,320L1260,320L1200,320L1200,320L1140,320L1140,320L1080,320L1080,320L1020,320L1020,320L960,320L960,320L900,320L900,320L840,320L840,320L780,320L780,320L720,320L720,320L660,320L660,320L600,320L600,320L540,320L540,320L480,320L480,320L420,320L420,320L360,320L360,320L300,320L300,320L240,320L240,320L180,320L180,320L120,320L120,320L60,320L60,320L0,320L0,320Z"></path>
+            </svg>
+
+        </section>
+
+        <section id="video-container">
+            <h2>Video Player</h2>
+            <div class="container">
+                <div id="player">
+                    <video id="video" src="./assets/video.mp4"></video>
+                    <div class="controls">
+                        <button id="btn-play">
+                            <i class="fa fa-play"></i>
+                            <i class="fa fa-pause"></i>
+                        </button>
+                        <div class="timeline">
+                            <div class="bar">
+                                <div class="inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="imagens">
+            <h2>Galeria de Imagens</h2>
+            <div class="container">
+                <img src="./assets/images/pexels-cottonbro-4604662.jpg" alt="imagem 1 ">
+                <img src="./assets/images/pexels-cottonbro-4604663.jpg" alt="imagem 2">
+                <img src="./assets/images/pexels-cup-of-couple-6956892.jpg" alt="imagem 3">
+                <img src="./assets/images/pexels-karolina-grabowska-4498125.jpg" alt="imagem 4">
+                <img src="./assets/images/pexels-karolina-grabowska-4498136.jpg" alt="imagem 5">
+                <img src="./assets/images/pexels-ketut-subiyanto-4246112.jpg" alt="imagem 6">
+                <img src="./assets/images/pexels-ketut-subiyanto-4246120.jpg" alt="imagem 7">
+                <img src="./assets/images/pexels-mister-mister-3434533.jpg" alt="imagem 8">
+                <img src="./assets/images/pexels-tima-miroshnichenko-6170154.jpg" alt="imagem 9">
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
