@@ -1,0 +1,63 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
+}
+
+form {
+    border: 1px solid #8b2caa;
+    box-shadow:1px 1px 5px 1px #b787da;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+.input-group,
+input {
+    display: block;
+    font-size: 1.8rem;
+    width: 50rem;
+    margin: 1.5rem auto
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #8b2caa;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    width: fit-content;
+
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+}
+
+#mensagem p {
+    font-size: 1.4rem;
+    color: #9e4978;
+}
+
+strong {
+    font-size: 1.4rem;
+}
+input[type="text"] {
+    border: 1px solid #8b2caa;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
