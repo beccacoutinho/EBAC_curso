@@ -1,0 +1,42 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin: 0 auto;
+    padding-bottom: 2vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-02 ;
+}
+.container-footer{
+    grid-template-columns: 4fr 8fr;
+    padding-left: 6px;
+}
+
+.loclogo{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    .text{
+        font-size: 15px;
+        line-height: 1.1rem;
+        b{
+            color: $color-01;
+        }
+    }
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    .copy{
+        text-align: right;
+        h3{
+            color: $color-01;
+        }
+    }
+}
+

@@ -1,0 +1,51 @@
+#banner{
+   display: grid;
+   grid-template-columns: 7fr 5fr;
+   height: 33vh;
+   overflow: hidden;
+}
+
+.info{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-01;
+    color: $color-04;
+    h1{
+        font-size: 2rem;
+        letter-spacing: .2rem;
+        font-weight: 200;
+        margin-bottom: 5px;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 20px;
+    }
+}
+
+.btn{
+    margin-top: 4vw;
+    .btn1{
+        background-color: $color-06;
+    }
+    .btn2{
+        background-color: $color-07;
+    }
+    .btn1:hover{
+        background-color: $color-07;
+    }
+    .btn2:hover{
+        background-color: $color-06;
+    }
+}
+
+.btn1, .btn2{
+    padding: 4px 8px;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+
+
